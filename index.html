@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>paran00id - NVIDIA</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/nvidia-logo.svg" alt="Logo de NVIDIA" width="120">
+        </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html" class="active">Inicio</a></li>
+                <li><a href="historia.html"> Historia</a></li>
+                <li><a href="graphics.html">GPUs</a></li>
+                <li><a href="technologies.html">Tecnologías</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Alternar menú móvil">☰</button>
+    </header>
+
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html" class="active">Historia</a></li>
+            <li><a href="graphics.html">GPUs</a></li>
+            <li><a href="technologies.html">Tecnologías</a></li>
+        </ul>
+    </div>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Potenciando el futuro de los gráficos</h1>
+            <p class="subtitle">Desde el año 1993 hasta la era del RTX y la IA</p>
+            <div class="cta-buttons">
+                <a href="graphics.html" class="btn primary">Explora GPUs</a>
+                <a href="historia.html" class="btn secondary">Conoce su historia</a>
+            </div>
+        </div>
+        <div class="hero-particles" id="particles-js"></div>
+    </section>
+
+    <section class="featured">
+        <h2 class="section-title">Descubre la innovación de NVIDIA</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🚀</div>
+                <h3>Evolución de las GPU</h3>
+                <p>Desde las GeForce 256 hasta las RTX 50 Series.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🧠</div>
+                <h3>Tegnologías Revolucionarias</h3>
+                <p>DLSS, Ray Tracing y más.</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📅</div>
+                <h3>Historia</h3>
+                <p>Más de 30 años de hitos tecnológicos.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="gpu-selector">
+        <h2 class="section-title">¿Qué GPU necesitas?</h2>
+        <form id="gpuForm">
+            <label for="usage">¿Para qué usarás la GPU?</label>
+            <select id="usage" name="usage">
+                <option value="gaming">Gaming</option>
+                <option value="rendering">Renderizado 3D</option>
+                <option value="ai">IA y Machine Learning</option>
+                <option value="general">Uso general</option>
+            </select>
+            <button type="submit" class="btn primary">Obtener recomendación</button>
+        </form>
+        <div id="gpuResult" class="result"></div>
+    </section>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        if (document.getElementById('particles-js')) {
+            particlesJS.load('particles-js', 'assets/particles-config.json');
+        }
+
+        document.getElementById('gpuForm').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const usage = document.getElementById('usage').value;
+            const resultDiv = document.getElementById('gpuResult');
+            
+            let recommendation = '';
+            if (usage === 'gaming') {
+                recommendation = 'Recomendamos la <strong>GeForce RTX 5090</strong> para gaming de alto rendimiento.';
+            } else if (usage === 'rendering') {
+                recommendation = 'La <strong>NVIDIA RTX A6000</strong> es ideal para renderizado 3D profesional.';
+            } else if (usage === 'ai') {
+                recommendation = 'Elige la <strong>NVIDIA A100</strong> para IA y Machine Learning.';
+            } else if (usage === 'general') {
+                recommendation = 'La <strong>GeForce GTX 1660</strong> es perfecta para uso general.';
+            }
+            
+            resultDiv.innerHTML = recommendation;
+        });
+    </script>
+ <!-- Paran00id es mi seudonimo -->
+        <footer>
+            <div class="footer-content">
+                <p>©Paran00id 2025; Sitio Educativo sobre Nvidia. No afiliado.</p>
+                <div class="social-media">
+                    <a href="https://www.facebook.com/NVIDIA" target="_blank">Facebook</a>
+                    <a href="https://twitter.com/NVIDIAGeForce" target="_blank">Twitter</a>
+                    <a href="https://www.instagram.com/nvidia/" target="_blank">Instagram</a>
+                </div>
+            </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de NVIDIA | Revolución Gráfica</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/nvidia-logo.svg" alt="NVIDIA" width="120">
+        </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="graphics.html" class="active">GPUs</a></li>
+                <li><a href="technologies.html">Tecnologías</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Alternar menú móvil">☰</button>
+        <div class="header-particles" id="particles-js"></div>
+    </header>
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html">Historia</a></li>
+            <li><a href="graphics.html" class="active">GPUs</a></li>
+            <li><a href="technologies.html">Tecnologías</a></li>
+        </ul>
+    </div>
+
+    <section class="hero-graphics">
+        <div class="hero-content">
+            <h1>Evolución de las GPUs de NVIDIA</h1>
+            <p class="subtitle">Desde la GeForce 256 (1999) hasta la RTX 5090</p>
+        </div>
+    </section>  
+
+    <div class="gpu-filters">
+        <button class="filter-btn active" data-filter="all">Todas</button>
+        <button class="filter-btn" data-filter="geforce">GeForce</button>
+        <button class="filter-btn" data-filter="rtx">RTX</button>
+        <button class="filter-btn" data-filter="workstation">Workstation</button>
+    </div>
+
+    <section class="gpu-list">
+        <div class="gpu-card" data-category="geforce" data-year="1999">
+            <div class="gpu-model" id="geforce256-model">
+                <img src="assets/geforce256.png" alt="GeForce 256" class="gpu-image">
+            </div>
+            <div class="gpu-info">
+                <h3>GeForce 256</h3>
+                <p><strong>Año:</strong> 1999</p>
+                <p><strong>Memoria:</strong> 32MB SDRAM</p>
+                <button class="btn small compare-btn" data-gpu="geforce256" aria-label="Comparar GeForce 256">Comparar</button>
+                <button class="detail-btn" data-target="popup-geforce256">➜</button>
+            </div>
+        </div>
+        <div class="gpu-card" data-category="geforce" data-year="2006">
+            <div class="gpu-model" id="geforce8800gtx-model">
+                <img src="assets/geforce8800gtx.png" alt="GeForce 8800 GTX" class="gpu-image">
+            </div>
+            <div class="gpu-info">
+                <h3>GeForce 8800 GTX</h3>
+                <p><strong>Año:</strong> 2006</p>
+                <p><strong>Memoria:</strong> 768MB GDDR3</p>
+                <button class="btn small compare-btn" data-gpu="geforce88000" aria-label="Comparar GeForce 8800 GTX">Comparar</button>
+                <button class="detail-btn" data-target="popup-geforce8800gtx">➜</button>
+            </div>
+        </div>
+        <div class="gpu-card" data-category="geforce" data-year="2014">
+            <div class="gpu-model" id="gtx980-model">
+                <iframe src="https://sketchfab.com/models/dbdacbd28623413aad6c3441545130b7/embed" width="100%" height="300px" loading="lazy"></iframe>
+            </div>
+            <div class="gpu-info">
+                <h3>GTX 980</h3>
+                <p><strong>Año:</strong> 2014</p>
+                <p><strong>Memoria:</strong> 4GB GDDR5</p>
+                <button class="btn small compare-btn" data-gpu="gtx980" aria-label="Comparar GTX 980">Comparar</button>
+                <button class="detail-btn" data-target="popup-gtx980">➜</button>
+            </div>
+        </div>
+        <div class="gpu-card" data-category="rtx" data-year="2018">
+            <div class="gpu-model" id="rtx2080ti-model">
+                <iframe src="https://sketchfab.com/models/8a03a4f1d0734d479e1fc00ed540d28e/embed" width="100%" height="300px" loading="lazy"></iframe>
+            </div>
+            <div class="gpu-info">
+                <h3>RTX 2080</h3>
+                <p><strong>Año:</strong> 2018</p>
+                <p><strong>Memoria:</strong> 8GB GDDR6</p>
+                <button class="btn small compare-btn" data-gpu="rtx2080ti" aria-label="Comparar RTX 2080 Ti">Comparar</button>
+                <button class="detail-btn" data-target="popup-rtx2080ti">➜</button>
+            </div>
+        </div>
+        <div class="gpu-card" data-category="rtx" data-year="2020">
+            <div class="gpu-model" id="rtx3080-model">
+                <iframe src="https://sketchfab.com/models/f2c2307a84154839a3e6e98ec337d6c1/embed" width="100%" height="300px" loading="lazy"></iframe>
+            </div>
+            <div class="gpu-info">
+                <h3>RTX 3080</h3>
+                <p><strong>Año:</strong> 2020</p>
+                <p><strong>Memoria:</strong> 10GB GDDR6X</p>
+                <button class="btn small compare-btn" data-gpu="rtx3080" aria-label="Comparar RTX 3080">Comparar</button>
+                <button class="detail-btn" data-target="popup-rtx3080">➜</button>
+            </div>
+        </div>
+        <div class="gpu-card" data-category="rtx" data-year="2022">
+            <div class="gpu-model" id="rtx4090-model">
+                <iframe src="https://sketchfab.com/models/d417c0b4c3bd475eb9669afcd14a2601/embed" width="100%" height="300px" loading="lazy"></iframe>
+            </div>
+            <div class="gpu-info">
+                <h3>RTX 4090</h3>
+                <p><strong>Año:</strong> 2022</p>
+                <p><strong>Memoria:</strong> 24GB GDDR6X</p>
+                <button class="btn small compare-btn" data-gpu="rtx4090" aria-label="Comparar RTX 4090">Comparar</button>
+                <button class="detail-btn" data-target="popup-rtx4090">➜</button>
+            </div>
+        </div>
+        <div class="gpu-card" data-category="rtx" data-year="2025">
+            <div class="gpu-model" id="rtx5090-model">
+                <iframe width="100%" height="300px" src="https://www.youtube.com/embed/VvqoclpbehA?start=0" frameborder="0" allowfullscreen loading="lazy"></iframe>
+            </div>
+            <div class="gpu-info">
+                <h3>RTX 5090</h3>
+                <p><strong>Año:</strong> 2025</p>
+                <p><strong>Memoria:</strong> 32GB GDDR7</p>
+                <button class="btn small compare-btn" data-gpu="rtx5090" aria-label="Comparar RTX 5090">Comparar</button>
+                <button class="detail-btn" data-target="popup-rtx5090">➜</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Comparador -->
+    <div class="comparator-modal" id="comparatorModal">
+        <div class="modal-content">
+            <span class="close-modal" aria-label="Cerrar comparador">×</span>
+            <h2>Comparar GPUs</h2>
+            <div class="comparator-container">
+                <div class="gpu-comparison" id="gpu1"></div>
+                <div class="vs-text">VS</div>
+                <div class="gpu-comparison" id="gpu2"></div>
+            </div>
+            <p id="compareLimitMessage" class="compare-limit-message">Solo puedes comparar dos GPUs a la vez. Restablece para continuar.</p>
+        </div>
+    </div>
+
+
+    <div class="detail-modal" id="popup-geforce256">
+        <div class="detail-content">
+            <span class="close-detail" aria-label="Cerrar detalles">×</span>
+            <h2>GeForce 256 - Detalles</h2>
+            <p><strong>Año:</strong> 1999</p>
+            <p><strong>Arquitectura:</strong> NV10</p>
+            <p><strong>Memoria:</strong> 32MB SDRAM</p>
+            <p><strong>Reseña:</strong> Primera GPU con aceleración 3D completa, revolucionó los gráficos.</p>
+        </div>
+    </div>
+    <div class="detail-modal" id="popup-geforce8800gtx">
+        <div class="detail-content">
+            <span class="close-detail" aria-label="Cerrar detalles">×</span>
+            <h2>GeForce 8800 GTX - Detalles</h2>
+            <p><strong>Año:</strong> 2006</p>
+            <p><strong>Arquitectura:</strong> Tesla</p>
+            <p><strong>Memoria:</strong> 768MB GDDR3</p>
+            <p><strong>Reseña:</strong> Introdujo CUDA, marcando el inicio de la computación GPU.</p>
+        </div>
+    </div>
+    <div class="detail-modal" id="popup-gtx980">
+        <div class="detail-content">
+            <span class="close-detail" aria-label="Cerrar detalles">×</span>
+            <h2>GTX 980 - Detalles</h2>
+            <p><strong>Año:</strong> 2014</p>
+            <p><strong>Arquitectura:</strong> Maxwell</p>
+            <p><strong>Memoria:</strong> 4GB GDDR5</p>
+            <p><strong>Reseña:</strong> Eficiencia energética mejorada, ideal para gaming 1080p.</p>
+        </div>
+    </div>
+    <div class="detail-modal" id="popup-rtx2080ti">
+        <div class="detail-content">
+            <span class="close-detail" aria-label="Cerrar detalles">×</span>
+            <h2>RTX 2080 - Detalles</h2>
+            <p><strong>Año:</strong> 2018</p>
+            <p><strong>Arquitectura:</strong> Turing</p>
+            <p><strong>Memoria:</strong> 8GB GDDR6</p>
+            <p><strong>Reseña:</strong> Primer uso de Ray Tracing en tiempo real.</p>
+        </div>
+    </div>
+    <div class="detail-modal" id="popup-rtx3080">
+        <div class="detail-content">
+            <span class="close-detail" aria-label="Cerrar detalles">×</span>
+            <h2>RTX 3080 - Detalles</h2>
+            <p><strong>Año:</strong> 2020</p>
+            <p><strong>Arquitectura:</strong> Ampere</p>
+            <p><strong>Memoria:</strong> 10GB GDDR6X</p>
+            <p><strong>Reseña:</strong> Gran salto en rendimiento para 4K.</p>
+        </div>
+    </div>
+    <div class="detail-modal" id="popup-rtx4090">
+        <div class="detail-content">
+            <span class="close-detail" aria-label="Cerrar detalles">×</span>
+            <h2>RTX 4090 - Detalles</h2>
+            <p><strong>Año:</strong> 2022</p>
+            <p><strong>Arquitectura:</strong> Ada Lovelace</p>
+            <p><strong>Memoria:</strong> 24GB GDDR6X</p>
+            <p><strong>Reseña:</strong> Líder en rendimiento para 8K y IA.</p>
+        </div>
+    </div>
+    <div class="detail-modal" id="popup-rtx5090">
+        <div class="detail-content">
+            <span class="close-detail" aria-label="Cerrar detalles">×</span>
+            <h2>RTX 5090 - Detalles</h2>
+            <p><strong>Año:</strong> 2025</p>
+            <p><strong>Arquitectura:</strong> Blackwell</p>
+            <p><strong>Memoria:</strong> 32GB GDDR7</p>
+            <p><strong>Reseña:</strong> Esperado como el próximo salto generacional.</p>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <p>Paran00id; 2025 Sitio Educativo sobre Nvidia. No afiliado.</p>
+            <div class="social-media">
+                <a href="https://facebook.com" target="_blank">Facebook</a>
+                <a href="https://twitter.com" target="_blank">Twitter</a>
+                <a href="https://instagram.com" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

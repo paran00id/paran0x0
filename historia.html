@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historia de NVIDIA | Revolución Gráfica </title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="assets/nvidia-logo.svg" alt="NVIDIA" width="120">
+        </div>
+        <nav class="desktop-nav">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="historia.html" class="active"> Historia</a></li>
+                <li><a href="graphics.html">GPUs</a></li>
+                <li><a href="technologies.html">Tecnologías</a></li>
+            </ul>
+        </nav>
+        <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Alternar menú móvil">☰</button>
+        <div class="header-particles" id="particles-js"></div>
+    </header>
+    <div class="mobile-nav" id="mobileNav">
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="historia.html"class="active">Historia</a></li>
+            <li><a href="graphics.html">GPUs</a></li>
+            <li><a href="technologies.html">Tecnologías</a></li>
+        </ul>
+    </div>
+    <section class="hero-history">
+        <div class ="hero-content">
+            <h1>Historia de NVIDIA</h1>
+            <p class="subtitle">Desde los gráficos 2D a la inteligencia artificial</p>
+            </div>
+    </section>
+    <section class="timeline">
+        <div class="timeline-line"></div>
+        <div class="timeline-event">
+            <div class="event-date">1993</div>
+              <div class="event-content">
+                <h3>Fundación de NVIDIA</h3>
+                <p>Jensen Huang, Chris Malachowsky y Curtis Priem fundan NVIDIA en Santa Clara, California, con el objetivo de revolucionar los gráficos por computadora</p>
+              </div>
+          </div>
+     </div>
+    <div class="timeline-event">
+        <div class="event-date">1999</div>
+        <div class="event-content">
+            <h3>GeForce 256</h3>
+            <p>Se lanza la primera GPU (Graphic Processing Unit) del mundo, capaz de procesar 10 millones de polígonos por segundo.</p>
+            <div class="event-image">
+                <img src="assets/geforce256.png" alt="GeForce 256">
+            </div>
+        </div>
+    </div>
+    <div class="timeline-event">
+        <div class="event-date">2006</div>
+        <div class="event-content">
+            <h3>Arquitectura CUDA</h3>
+            <p>NVIDIA lanza CUDA, una plataforma de computación paralela que permite que las GPUs sean usadas para computación general (GPGPU), abriendo puertas a la IA y ciencia de datos.</p>
+            </div>
+    </div>
+    <div class="timeline-event">
+        <div class="event-date">2018</div>
+        <div class="event-content">
+            <h3>RTX y Ray Tracing</h3>
+            <p>Se lanza la serie RTX 20, introduciendo el trazado de rayos en tiempo real y DLSS (Deep Learning Super Sampling).</p>
+            <div class="event-image">
+                <img src="assets/rtx20.png" alt="RTX 2080 series">
+            </div>
+    </section>
+
+    <section class="founder-section">
+        <div class="founder-image">
+            <img src="assets/jensen-huang.png" alt="Jensen Huang">
+        </div>
+        <div class="founder-info">
+            <h2>Jensen Huang</h2>
+            <p>CEO y cofundador de NVIDIA, lidera la compañía desde 1993. Bajo su dirección, NVIDIA se convirtió en líder de GPUs y pionera en IA.</p>
+            <blockquote>"Nuestro trabajo es darle al mundo los instrumentos para soñar con lo imposible."</blockquote>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+            <p>©Paran00id 2025; Sitio Educativo sobre nvidia. No afiliado.</p>
+            <div class="social-media">
+                <a href="https://www.facebook.com/NVIDIA" target="_blank">Facebook</a>
+                <a href="https://twitter.com/NVIDIAGeForce" target="_blank">Twitter</a>
+                <a href="https://www.instagram.com/nvidia/" target="_blank">Instagram</a>
+            </div>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        if (document.getElementById('particles-js')) {
+            particlesJS.load('particles-js', 'assets/particles-config.json');
+        }
+    </script>
+    </script>
+</body>

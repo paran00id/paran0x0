@@ -1,4 +1,3 @@
-/* Estilos generales */
 :root {
     --nvidia-green: #76b900;
     --nvidia-black: #000000;
@@ -547,9 +546,8 @@ footer {
     background: var(--nvidia-gray);
     padding: 2rem;
     border-radius: 8px;
-    width: 120%;
-    max-width: 1000px;
-    position: relative;
+    width: 85%;
+    position: fixed;
     text-align: center;
 }
 
@@ -569,6 +567,7 @@ footer {
 
 .comparator-container {
     display: flex;
+    justify-content: center;
     gap: 2rem;
     margin-top: 1.5rem;
 }

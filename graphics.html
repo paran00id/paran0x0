@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Historia de NVIDIA | Revolución Gráfica</title>
+    <title>Gráficas NVIDIA</title>
     <link rel="stylesheet" href="css/styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
     <header>
         <div class="logo">
-            <img src="assets/nvidia-logo.svg" alt="NVIDIA" width="120">
+            <a href="index.html" title="Ir a Inicio"><img src="assets/nvidia-logo.svg" alt="Logo de NVIDIA" width="120"></a>
         </div>
         <nav class="desktop-nav">
             <ul>
@@ -35,7 +35,7 @@
     <section class="hero-graphics">
         <div class="hero-content">
             <h1>Evolución de las GPUs de NVIDIA</h1>
-            <p class="subtitle">Desde la GeForce 256 (1999) hasta la RTX 5090</p>
+            <p class="subtitle">Desde la GeForce 256 (1999) hasta la RTX 5090(2025)</p>
         </div>
     </section>  
 
@@ -131,9 +131,7 @@
                 <button class="detail-btn" data-target="popup-rtx5090">➜</button>
             </div>
         </div>
-    </section>
-
-    <!-- Modal Comparador -->
+    </section> 
     <div class="comparator-modal" id="comparatorModal">
         <div class="modal-content">
             <span class="close-modal" aria-label="Cerrar comparador">×</span>
@@ -143,7 +141,7 @@
                 <div class="vs-text">VS</div>
                 <div class="gpu-comparison" id="gpu2"></div>
             </div>
-            <p id="compareLimitMessage" class="compare-limit-message">Solo puedes comparar dos GPUs a la vez. Restablece para continuar.</p>
+        
         </div>
     </div>
 
@@ -231,7 +229,6 @@
         </div>
     </footer>
 
-    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="js/main.js"></script>
 </body>
